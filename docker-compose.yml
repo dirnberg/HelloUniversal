@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  hellouniversal:
+    build: .
+    volumes:
+      - ./HelloUniversal/data:/app/HelloUniversal/data
+      - ./HelloUniversal/bin:/app/HelloUniversal/bin
+    working_dir: /app/HelloUniversal
